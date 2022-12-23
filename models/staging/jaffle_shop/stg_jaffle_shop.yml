@@ -9,6 +9,10 @@ models:
         tests:
           - unique
           - not_null
+      - name: first_name
+        description: Customer's first name.
+      - name: last_name
+        description: Customer's last name.
 
   - name: stg_orders
     description: Staged order data from our jaffle shop app.
@@ -34,3 +38,5 @@ models:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
+      - name: order_date:
+        description: Date order was placed
