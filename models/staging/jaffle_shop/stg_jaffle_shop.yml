@@ -27,4 +27,4 @@ models:
         tests:
           - relationships:
               to: ref('customers')
-              field: id
+              field: customer_id
