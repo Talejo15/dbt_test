@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Payment data coming from Stripe.
+    columns: 
+      - name: customer_id
+        description: The primary key for customers.
+      - name: order_id
+        description: The primary key for orders.
+      - name: payment_method
+        description: "{{ doc('payment_method') }}"
